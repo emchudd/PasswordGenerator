@@ -1,0 +1,77 @@
+/* Star Selector (Selects every element in the document (HTML))*/
+
+* {
+    /* Includes the padding and border when setting a width or height for an element*/
+    box-sizing: border-box;
+}
+
+body {
+    background: #00351c59;
+    color: #f8f7ca;
+    font-family: 'Playfair Display', serif;
+    /* Flexbox used to center the div horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Setting the height to the 100vh so the div will be centered in the browser window (AKA viewport)*/
+    height: 100vh;
+    /* So the div container is not up against the edge of the viewport on smaller screen sizes*/
+}
+
+h2 {
+    /* Top Right/Left Bottom */
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    background: #8d412a;
+    padding: 15px;
+    width: 350px;
+    border-radius: 25px;    
+}
+
+.result-container {
+    background-color: #fcdfce;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.btn {
+    background: #eea86f;
+    border: none;
+    color: #f8f7ca;
+    /* changes the cursor to a pointer when hovering over a button */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#clipboard {
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+}
+/* Changes font size of generated password for smaller screens */
+@media (max-width: 400px){
+    .result-container{
+        fontsize: 14px;
+    }
+}
