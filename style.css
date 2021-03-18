@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #00351c59;
+    background-image: url("bohovibes.jpg");
     color: #f8f7ca;
     font-family: 'Playfair Display', serif;
     /* Flexbox used to center the div horizontally and vertically */
